@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Insurance Camera App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome">
+    <input id="userCode" placeholder="أدخل رمز الاسم">
+    <button onclick="saveCode()">التالي</button>
+  </div>
+
+  <div id="data" style="display:none;">
+    <input id="insuredName" placeholder="اسم المؤمن">
+    <input id="carNumber" placeholder="رقم السيارة">
+    <button onclick="startCamera()">ابدأ التصوير</button>
+  </div>
+
+  <div id="camera" style="display:none;">
+    <video id="video" autoplay></video>
+    <button onclick="capturePhoto()">التقاط صورة</button>
+    <button id="finishBtn" onclick="finish()">إنهاء</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
